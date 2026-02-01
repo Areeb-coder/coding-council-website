@@ -24,6 +24,23 @@ interface TeamMember {
 
 const DISPLAY_COUNT = 6;
 
+// Helper to sanitize image paths for production
+const getSafeImage = (imagePath: string, name: string) => {
+    if (!imagePath) return `https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&background=random&color=fff&size=200`;
+
+    // Handle legacy paths from DB/Old Json
+    if (imagePath.includes('/Assets/')) {
+        // Convert '/Assets/Foo Bar.png' -> '/assets/team/foo-bar.png'
+        const filename = imagePath.split('/').pop() || '';
+        const namePart = filename.split('.')[0];
+        const ext = filename.split('.')[1] || 'png';
+        const kebabName = namePart.toLowerCase().replace(/\s+/g, '-');
+        return `/assets/team/${kebabName}.${ext}`;
+    }
+
+    return imagePath;
+};
+
 export default function Team() {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, margin: '-100px' });
@@ -105,12 +122,14 @@ export default function Team() {
                                         <div className="relative w-32 h-32 mx-auto mb-6">
                                             <div className="w-full h-full rounded-full overflow-hidden border-4 border-[var(--color-accent)]/20 group-hover:border-[var(--color-accent)] transition-colors">
                                                 <img
-                                                    src={member.image}
+                                                    src={getSafeImage(member.image, member.name)}
                                                     alt={member.name}
                                                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                                                     onError={(e) => {
-                                                        // Fallback to initials on image error
-                                                        (e.target as HTMLImageElement).style.display = 'none';
+                                                        const target = e.target as HTMLImageElement;
+                                                        // Prevent infinite loop if fallback also fails
+                                                        if (target.src.includes('ui-avatars.com')) return;
+                                                        target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(member.name)}&background=random&color=fff&size=200`;
                                                     }}
                                                 />
                                             </div>

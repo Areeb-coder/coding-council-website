@@ -122,7 +122,7 @@ export const teamMembers: TeamMember[] = [
         name: 'Arshad Ali',
         role: 'President',
         bio: 'Leading Coding Council initiatives with a focus on quality work, flawless execution, and real-world learnings.',
-        image: '/Assets/Arshad Ali.png',
+        image: '/assets/team/arshad-ali.png',
         social: {
             linkedin: 'https://www.linkedin.com/in/arshad-ali-6a1250361',
             github: 'https://github.com/arshadali-coder',
@@ -135,7 +135,7 @@ export const teamMembers: TeamMember[] = [
         name: 'Areeb Khalid',
         role: 'Vice President & Operation Head',
         bio: 'CS & DS | Python & Web Dev | Java DSA | Engaging Orator & Driven Leader. Striving for Excellence.',
-        image: '/Assets/Areeb Khalid.png',
+        image: '/assets/team/areeb-khalid.png',
         social: {
             linkedin: 'https://www.linkedin.com/in/areeb-khalid-960262379/',
             github: 'https://github.com/Areeb-coder',
@@ -148,7 +148,7 @@ export const teamMembers: TeamMember[] = [
         name: 'Zaid Rehman',
         role: 'Graphics Head',
         bio: 'Creative designer bringing visual excellence to the Coding Council brand.',
-        image: '/Assets/Zaid Rehman.jpeg',
+        image: '/assets/team/zaid-rehman.jpeg',
         social: {},
         order: 3,
     },
@@ -157,7 +157,7 @@ export const teamMembers: TeamMember[] = [
         name: 'Kashif Ansari',
         role: 'SMM Head',
         bio: 'Managing and growing the Coding Council social media presence.',
-        image: '/Assets/Kashif Ansari.jpeg',
+        image: '/assets/team/kashif-ansari.jpeg',
         social: {
             linkedin: 'https://www.linkedin.com/in/kashif-ansari-b85578267/',
         },
@@ -168,7 +168,7 @@ export const teamMembers: TeamMember[] = [
         name: 'Arman Ahmad',
         role: 'AI/ML Head',
         bio: 'Python Developer specializing in Machine Learning and Backend development.',
-        image: '/Assets/Arman Ahmad.jpeg',
+        image: '/assets/team/arman-ahmad.jpeg',
         social: {
             linkedin: 'https://www.linkedin.com/in/armanahmad16',
             github: 'https://github.com/4rrmann',
@@ -181,7 +181,7 @@ export const teamMembers: TeamMember[] = [
         name: 'Jasrah Aftab',
         role: 'Deputy Graphics Head',
         bio: 'CSE undergraduate | Learning DSA in C++ | Exploring Python & Web Development | Graphic Designer | Combining technology with creativity.',
-        image: '/Assets/Jasrah Aftab.jpeg',
+        image: '/assets/team/jasrah-aftab.jpeg',
         social: {
             linkedin: 'https://www.linkedin.com/in/jasrah-aftab-62a747383',
             github: 'https://github.com/jasrahaftab',
@@ -194,7 +194,7 @@ export const teamMembers: TeamMember[] = [
         name: 'Sadiya Parveen',
         role: 'Associate Graphics Head',
         bio: 'VLSI student | Exploring digital design, IC technology & the future of semiconductors.',
-        image: '/Assets/Saadiya Parveen.jpeg',
+        image: '/assets/team/saadiya-parveen.jpeg',
         social: {
             linkedin: 'https://www.linkedin.com/in/sadiya-parveen-b442a7298',
             github: 'https://github.com/sadiyaparveen1107',
@@ -207,7 +207,7 @@ export const teamMembers: TeamMember[] = [
         name: 'Aamina Siraj',
         role: 'HR Head',
         bio: 'Bringing together AI and empathetic leadership to make a difference.',
-        image: '/Assets/Aamina Siraj.jpeg',
+        image: '/assets/team/aamina-siraj.jpeg',
         social: {
             linkedin: 'https://www.linkedin.com/in/aaminasiraj23',
             email: 'aaminasiraj23@gmail.com',
@@ -219,7 +219,7 @@ export const teamMembers: TeamMember[] = [
         name: 'Azkiya Faiz',
         role: 'Content Head',
         bio: 'VLSI Student finding her way through chips, logic and code.',
-        image: '/Assets/Azkiya Faiz.jpeg',
+        image: '/assets/team/azkiya-faiz.jpeg',
         social: {
             linkedin: 'https://www.linkedin.com/in/azkiya-faiz-a43364379',
             email: 'azkiyafaizkhan@gmail.com',
